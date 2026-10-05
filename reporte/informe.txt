@@ -1,0 +1,43 @@
+1.Nombre del estudiante:
+Quispe Mamani Ignacio Ronald
+
+2.Título del caso:
+Análisis del tiempo que toma atender a los clientes en las cajas de un supermercado.
+
+3.Formulación del problema:
+En las horas donde más gente va a comprar, las cajas del supermercado se llenan y se forman filas muy largas. Esto hace que los clientes se molesten por la espera. Por eso, necesitamos revisar cuánto tiempo tarda en promedio la atención por persona para ver si hay retrasos raros o problemas en las cajas.
+
+4.Variable principal:
+Tiempo de atención por cliente (medido en minutos).
+
+5.Supuestos:
+- Se tomaron los tiempos de 30 clientes elegidos al azar en la hora de mayor movimiento.
+- El tiempo se cuenta desde que el cajero empieza a pasar el primer producto hasta que entrega el ticket de compra.
+- Consideramos que la mayoría de los clientes tardan tiempos parecidos para poder aplicar la prueba del Z-Score.
+
+6.Estadísticos descriptivos:
+- Cantidad de personas (n): 30 clientes
+- Promedio (Media): 4.70 minutos
+- Punto medio (Mediana): 4.00 minutos
+- Tiempo más repetido (Moda): 4.00 minutos
+- Variación común (Desviación Estándar): 2.99 minutos
+- Varianza: 8.94 minutos²
+- Tiempo más rápido (Mínimo): 2.50 minutos
+- Tiempo más lento (Máximo): 15.80 minutos
+- Primer 25% más rápido (Q1): 3.23 minutos
+- El 75% atiende en hasta (Q3): 4.78 minutos
+- Rango entre el 25% y 75% (IQR): 1.55 minutos
+
+7.Valores atípicos (Outliers) detectados con Z-Score:
+Usando la regla de buscar datos demasiado alejados del resto (más de 3 puntos en Z-Score), encontramos 2 casos fuera de lo normal:
+- Cliente número 16: tardó 14.50 minutos (Z-Score = 3.28)
+- Cliente número 27: tardó 15.80 minutos (Z-Score = 3.71)
+
+8.Análisis descriptivo de la variable:
+La gran mayoría de los clientes (un 75%) sale de caja en menos de 4.78 minutos, y la mitad se atiende en 4 minutos o menos. La atención normal es bastante rápida. Sin embargo, el promedio general subió a 4.70 minutos únicamente porque hubo dos personas que tardaron casi 15 minutos o más, lo que empuja el resultado hacia arriba.
+
+9.Interpretación técnica:
+El tiempo promedio de atención se ve perjudicado por estos dos casos extremos (los clientes 16 y 27). Tardar más de 14 minutos no es lo habitual y hace que la variación del tiempo se vuelva muy alta. Esto suele pasar cuando alguien lleva un carro extremadamente lleno, falla la tarjeta de pago, el sistema de la caja se traba o falta dar cambio.
+
+10.Conclusión:
+En general, el supermercado atiende rápido a un cliente común (alrededor de 4 minutos). El problema principal no son todos los clientes, sino esos casos raros que demoran demasiado y traban la fila. Para solucionar esto, conviene poner una caja especial para compras grandes o para resolver problemas de cobro, evitando que la fila normal se detenga.
